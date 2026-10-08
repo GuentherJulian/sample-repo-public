@@ -1,7 +1,7 @@
 import unittest
 
 from calc import add, subtract
-from greet import greet
+from greet import greet, farewell
 
 
 class SampleTest(unittest.TestCase):
@@ -13,6 +13,9 @@ class SampleTest(unittest.TestCase):
 
     def test_greet(self):
         self.assertEqual(greet("Ada"), "Hello, Ada!")
+
+    def test_farewell(self):
+        self.assertEqual(farewell("Ada"), "Goodbye, Ada!")
 
 
 if __name__ == "__main__":
