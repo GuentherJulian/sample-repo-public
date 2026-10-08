@@ -6,4 +6,6 @@ def greet(name):
     return f"Hello, {name}!"
 
 
-# TODO: add farewell(name) returning "Goodbye, <name>!" and a test for it in test_sample.py.
+def farewell(name):
+    """Return a farewell for name."""
+    return f"Goodbye, {name}!"
