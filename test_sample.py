@@ -1,6 +1,6 @@
 import unittest
 
-from calc import add, subtract
+from calc import add, subtract, divide
 from greet import greet, farewell
 
 
@@ -10,6 +10,9 @@ class SampleTest(unittest.TestCase):
 
     def test_subtract(self):
         self.assertEqual(subtract(5, 3), 2)
+
+    def test_divide(self):
+        self.assertEqual(divide(6, 2), 3)
 
     def test_greet(self):
         self.assertEqual(greet("Ada"), "Hello, Ada!")
